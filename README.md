@@ -3,6 +3,8 @@
 
 Angela Caroline Budiman (2409116008)
 
+Sistem Informasi A'2024
+
 # Deskripsi
 Program ini merupakan sebuah program sederhana CRUD dengan tema Manajemen Data Nasabah Bank Digital. Melalui menu konsol yang interaktif, pengguna dapat melakukan operasi data nasabah secara lengkap, mulai dari menambah (Create), melihat (Read), mengubah (Update), hingga menghapus (Delete) data. Selain itu, program ini juga dilengkapi dengan fitur transaksi dasar seperti setor tunai, tarik tunai, dan transfer dana antar rekening, sehingga dapat menjadi simulasi sederhana dalam pengelolaan dan manajemen data nasabah bank secara digital.
 
@@ -10,6 +12,28 @@ Program ini merupakan sebuah program sederhana CRUD dengan tema Manajemen Data N
 Program ini berjalan dengan menampilkan delapan menu utama kepada pengguna. Opsi 1 sampai 4 digunakan untuk mengelola data dasar nasabah (tambah, lihat, ubah, hapus). Menu 5 membuka sub-menu untuk transaksi finansial, sementara menu 6 dan 7 berfungsi untuk melihat riwayat rekening dan mencari data nasabah. Program akan selalu kembali ke tampilan menu ini setelah setiap tugas selesai, hingga pengguna memilih menu 8 untuk keluar.
 
 Setiap input yang bukan merupakan angka 1–8 akan dianggap tidak valid, lalu program secara otomatis mengarahkan kembali pengguna ke menu utama.
+
+### Penjelasan Alur per Fitur
+1. Tambah Nasabah (Create)
+Pengguna mendaftarkan nasabah baru dengan nama dan setoran awal. Sistem akan membuatkan nomor rekening unik secara otomatis.
+2. Tampilkan Nasabah (Read)
+Menampilkan daftar lengkap seluruh data nasabah yang tersimpan.
+3. Ubah Nama Nasabah (Update)
+Pengguna dapat mengubah nama nasabah yang sudah ada dengan mencarinya berdasarkan nomor rekening.
+4. Hapus Nasabah (Delete)
+Menghapus data nasabah dari sistem berdasarkan nomor rekening. Program akan memberi notifikasi jika rekening tidak ditemukan.
+5. Lakukan Transaksi
+Membuka sub-menu untuk melakukan transaksi finansial, yang meliputi:
+- Setor Tunai: Menambahkan dana ke rekening.
+- Tarik Tunai: Menarik dana dari rekening, dengan validasi saldo minimum.
+- Transfer Dana: Memindahkan dana antar rekening, dengan validasi saldo dan biaya administrasi.
+- Kembali Ke Menu Utama: Opsi untuk keluar dari sub-menu dan kembali ke menu utama.
+6. Lihat Mutasi Rekening
+Menampilkan seluruh riwayat transaksi (mutasi) dari sebuah rekening berdasarkan nomornya.
+7. Cari Nasabah (Search)
+Mencari data nasabah secara fleksibel menggunakan input nama atau nomor rekening.
+8. Keluar (Exit)
+Menghentikan dan keluar dari program.
 
 # Output Program
 ## Menu Program
@@ -72,7 +96,7 @@ Pada menu Setor Tunai, pengguna diminta memasukkan nomor rekening tujuan (contoh
 
 <img width="442" height="112" alt="image" src="https://github.com/user-attachments/assets/f5437961-0fbc-4c06-ac17-afc054edc357" />
 
-Alur ini menunjukkan penanganan kesalahan pada menu Setor Tunai. Ketika pengguna memasukkan nomor rekening yang tidak ada dalam sistem (contoh: 20), program akan melakukan pencarian dan gagal menemukan data yang cocok. Akibatnya, sistem akan membatalkan transaksi dan menampilkan pesan "GAGAL: Rekening tidak ditemukan.".
+Alur ini menunjukkan penanganan kesalahan pada menu Setor Tunai. Ketika pengguna memasukkan nomor rekening yang tidak ada dalam sistem (contoh: 20), program akan melakukan pencarian dan gagal menemukan data yang cocok. Akibatnya, sistem akan membatalkan transaksi dan menampilkan pesan "GAGAL: Rekening tidak ditemukan"
 
 ### Tarik Tunai
 <img width="680" height="150" alt="image" src="https://github.com/user-attachments/assets/6f879db1-a207-4212-be14-4be0992fc92b" />
