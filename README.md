@@ -101,7 +101,7 @@ Alur ini menunjukkan penanganan kesalahan pada menu Setor Tunai. Ketika pengguna
 ### Tarik Tunai
 <img width="680" height="150" alt="image" src="https://github.com/user-attachments/assets/6f879db1-a207-4212-be14-4be0992fc92b" />
 
-Pada menu Tarik Tunai, alur ini menunjukkan validasi saldo minimum. Pengguna memasukkan nomor rekening yang valid (REK2025001) dan mencoba menarik nominal yang sangat besar (200000000). Program kemudian memeriksa apakah sisa saldo setelah penarikan akan lebih besar atau sama dengan batas saldo minimum yang telah ditentukan. Karena kondisi tersebut tidak terpenuhi, transaksi dibatalkan dan sistem menampilkan pesan "GAGAL: Saldo tidak mencukupi atau akan kurang dari saldo minimum.".
+Pada menu Tarik Tunai, alur ini menunjukkan validasi saldo minimum. Pengguna memasukkan nomor rekening yang valid (REK2025001) dan mencoba menarik nominal yang sangat besar (200000000). Program kemudian memeriksa apakah sisa saldo setelah penarikan akan lebih besar atau sama dengan batas saldo minimum yang telah ditentukan. Karena kondisi tersebut tidak terpenuhi, transaksi dibatalkan dan sistem menampilkan pesan "GAGAL: Saldo tidak mencukupi atau akan kurang dari saldo minimum"
 
 <img width="434" height="138" alt="image" src="https://github.com/user-attachments/assets/8f2f7475-2bbb-4462-9bae-42409dbffade" />
 
@@ -109,20 +109,20 @@ Alur ini menunjukkan proses transaksi Tarik Tunai yang berhasil. Setelah memilih
 
 <img width="437" height="115" alt="image" src="https://github.com/user-attachments/assets/40b63c50-e20b-4594-b05e-e2b360f93114" />
 
-Alur ini menunjukkan penanganan kesalahan ketika pengguna mencoba melakukan penarikan tunai dari rekening yang tidak ada. Pengguna memasukkan nomor rekening yang tidak terdaftar di sistem (contoh: 1000). Program kemudian mencari data tersebut namun tidak berhasil menemukannya, sehingga transaksi dibatalkan dan sistem menampilkan pesan "GAGAL: Rekening tidak ditemukan.".
+Alur ini menunjukkan penanganan kesalahan ketika pengguna mencoba melakukan penarikan tunai dari rekening yang tidak ada. Pengguna memasukkan nomor rekening yang tidak terdaftar di sistem (contoh: 1000). Program kemudian mencari data tersebut namun tidak berhasil menemukannya, sehingga transaksi dibatalkan dan sistem menampilkan pesan "GAGAL: Rekening tidak ditemukan"
 
 ### Transfer Dana 
 <img width="460" height="172" alt="image" src="https://github.com/user-attachments/assets/a50a426f-9274-4851-a733-c609c735ccd8" />
 
-Alur ini menunjukkan proses Transfer Dana yang berhasil antar dua rekening berbeda. Pengguna memasukkan nomor rekening pengirim (REK2025001), nomor rekening penerima (REK2025002), dan jumlah yang akan ditransfer (100000). Program memvalidasi bahwa semua rekening valid dan saldo pengirim mencukupi untuk jumlah transfer ditambah biaya administrasi. Setelah semua syarat terpenuhi, saldo pengirim dikurangi dan saldo penerima ditambahkan. Terakhir, sistem menampilkan pesan konfirmasi "BERHASIL: Transfer berhasil."
+Alur ini menunjukkan proses Transfer Dana yang berhasil antar dua rekening berbeda. Pengguna memasukkan nomor rekening pengirim (REK2025001), nomor rekening penerima (REK2025002), dan jumlah yang akan ditransfer (100000). Program memvalidasi bahwa semua rekening valid dan saldo pengirim mencukupi untuk jumlah transfer ditambah biaya administrasi. Setelah semua syarat terpenuhi, saldo pengirim dikurangi dan saldo penerima ditambahkan. Terakhir, sistem menampilkan pesan konfirmasi "BERHASIL: Transfer berhasil"
 
 <img width="569" height="151" alt="image" src="https://github.com/user-attachments/assets/96819513-c758-4af3-a533-44e9494fa7b5" />
 
-Alur ini menunjukkan validasi penting pada fitur Transfer Dana, yaitu mencegah pengguna mentransfer uang ke rekeningnya sendiri. Pengguna memasukkan nomor rekening yang sama untuk pengirim dan penerima (REK2025001). Program mendeteksi kesamaan ini, membatalkan transaksi sebelum meminta nominal, dan menampilkan pesan "GAGAL: Anda tidak bisa mentransfer ke rekening sendiri.".
+Alur ini menunjukkan validasi penting pada fitur Transfer Dana, yaitu mencegah pengguna mentransfer uang ke rekeningnya sendiri. Pengguna memasukkan nomor rekening yang sama untuk pengirim dan penerima (REK2025001). Program mendeteksi kesamaan ini, membatalkan transaksi sebelum meminta nominal, dan menampilkan pesan "GAGAL: Anda tidak bisa mentransfer ke rekening sendiri"
 
 <img width="469" height="164" alt="image" src="https://github.com/user-attachments/assets/65111d0c-94a5-460d-80da-f3d170282faa" />
 
-Alur ini menunjukkan validasi saldo pada fitur Transfer Dana. Pengguna telah memasukkan nomor rekening pengirim dan penerima yang valid, namun kemudian memasukkan jumlah transfer yang sangat besar (2000000000). Program memeriksa apakah saldo pengirim mencukupi untuk membayar jumlah transfer ditambah biaya administrasi. Karena tidak cukup, transaksi dibatalkan dan sistem menampilkan pesan "GAGAL: Saldo tidak mencukupi.".
+Alur ini menunjukkan validasi saldo pada fitur Transfer Dana. Pengguna telah memasukkan nomor rekening pengirim dan penerima yang valid, namun kemudian memasukkan jumlah transfer yang sangat besar (2000000000). Program memeriksa apakah saldo pengirim mencukupi untuk membayar jumlah transfer ditambah biaya administrasi. Karena tidak cukup, transaksi dibatalkan dan sistem menampilkan pesan "GAGAL: Saldo tidak mencukupi"
 
 ### Kembali Ke Menu Utama
 <img width="377" height="275" alt="image" src="https://github.com/user-attachments/assets/8e7f34c9-cd43-40f1-8b3c-d92e8bf70aa3" />
