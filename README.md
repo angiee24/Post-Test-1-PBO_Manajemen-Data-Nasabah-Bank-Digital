@@ -4,13 +4,15 @@
 Angela Caroline Budiman (2409116008)
 
 # Deskripsi
-Program ini merupakan sebuah program sederhana CRUD dengan tema Manajemen Data Nasabah Bank Digital. Di program ini, pengguna dapat melakukan eksekusi untuk menambah, menghapus, melihat, mengedit, serta melakukan transaksi pada data nasabah bank.
+Program ini merupakan sebuah program sederhana CRUD dengan tema Manajemen Data Nasabah Bank Digital. Melalui menu konsol yang interaktif, pengguna dapat melakukan operasi data nasabah secara lengkap, mulai dari menambah (Create), melihat (Read), mengubah (Update), hingga menghapus (Delete) data. Selain itu, program ini juga dilengkapi dengan fitur transaksi dasar seperti setor tunai, tarik tunai, dan transfer dana antar rekening, sehingga dapat menjadi simulasi sederhana dalam pengelolaan dan manajemen data nasabah bank secara digital.
 
 # Alur Program
-Program ini adalah simulasi sederhana untuk Manajemen Data Nasabah Bank Digital. Melalui menu konsol yang interaktif, pengguna dapat melakukan operasi data nasabah secara lengkap, mulai dari menambah (Create), melihat (Read), mengubah (Update), hingga menghapus (Delete) data. Program ini juga dilengkapi dengan fitur transaksi dasar seperti setor tunai, tarik tunai, dan transfer dana antar rekening.
+Program ini berjalan dengan menampilkan delapan menu utama kepada pengguna. Opsi 1 sampai 4 digunakan untuk mengelola data dasar nasabah (tambah, lihat, ubah, hapus). Menu 5 membuka sub-menu untuk transaksi finansial, sementara menu 6 dan 7 berfungsi untuk melihat riwayat rekening dan mencari data nasabah. Program akan selalu kembali ke tampilan menu ini setelah setiap tugas selesai, hingga pengguna memilih menu 8 untuk keluar.
+
+Setiap input yang bukan merupakan angka 1–8 akan dianggap tidak valid, lalu program secara otomatis mengarahkan kembali pengguna ke menu utama.
 
 # Output Program
-Menu Program
+## Menu Program
 
 <img width="345" height="228" alt="image" src="https://github.com/user-attachments/assets/d07e6d64-e02d-4c0a-abf2-5c8f99967316" />
 
@@ -21,21 +23,21 @@ Program ini berjalan dengan menampilkan delapan menu utama kepada pengguna. Opsi
 
 setiap input yang bukan 1–8 akan dianggap tidak valid, lalu program otomatis mengarahkan kembali ke menu utama.
 
-Menu Create (Tambah Nasabah)
+## Menu Create (Tambah Nasabah)
 
 <img width="717" height="136" alt="image" src="https://github.com/user-attachments/assets/c9dedb5a-a3bf-4cbc-a195-3e2b56c2ef6d" />
 
 Pada menu **Tambah Nasabah**, pengguna diminta memasukkan nama dan jumlah setoran awal, lalu sistem secara otomatis membuat nomor rekening baru secara berurutan (contoh: `REK2025003`) dan menyimpan data tersebut ke dalam daftar nasabah. Setelah itu, program menampilkan pesan berhasil bahwa nasabah baru telah ditambahkan, kemudian pengguna diarahkan untuk menekan Enter agar kembali ke menu utama.
 
 
-Menu Read (Tampilkan Nasabah)
+## Menu Read (Tampilkan Nasabah)
 
 <img width="718" height="142" alt="image" src="https://github.com/user-attachments/assets/718e1f77-1b43-4ee6-a69a-d2251e7e78cb" />
 
 Pada menu **Tampilkan Nasabah**, program akan menampilkan seluruh data nasabah yang tersimpan dalam daftar, meliputi nomor rekening, nama, dan saldo masing-masing nasabah secara berurutan (contoh: REK2025001 atas nama Budi Santoso, REK2025002 atas nama Citra Lestari, dan REK2025003 atas nama Angie). Setelah data ditampilkan, pengguna diminta menekan Enter untuk kembali ke menu utama.
 
 
-Menu Update (Ubah Nama Nasabah)
+## Menu Update (Ubah Nama Nasabah)
 
 <img width="558" height="163" alt="image" src="https://github.com/user-attachments/assets/bda2bc18-5475-4f47-ad26-1a94f978a8b5" />
 
@@ -46,7 +48,7 @@ Pada menu **Ubah Nama Nasabah**, pengguna diminta memasukkan nomor rekening nasa
 Pada menu **Ubah Nama Nasabah**, jika pengguna memasukkan nomor rekening yang tidak terdaftar dalam sistem (contoh: `12`), maka program akan menampilkan pesan **"GAGAL: Rekening tidak ditemukan."**. Setelah itu, pengguna diarahkan untuk menekan Enter agar kembali ke menu utama tanpa ada perubahan data nasabah.
 
 
-Menu Delete (Hapus Nasabah)
+## Menu Delete (Hapus Nasabah)
 
 <img width="556" height="115" alt="image" src="https://github.com/user-attachments/assets/b1df4380-413b-4bef-8e9f-dca97dedfe8a" />
 
@@ -57,56 +59,59 @@ Pada menu **Hapus Nasabah**, pengguna diminta memasukkan nomor rekening yang ing
 
 Pada menu Hapus Nasabah, jika pengguna memasukkan nomor rekening yang tidak terdaftar dalam sistem (contoh: 123), maka program akan menampilkan pesan "GAGAL: Rekening tidak ditemukan.". Setelah itu, pengguna diarahkan untuk menekan Enter agar kembali ke menu utama tanpa ada data yang terhapus
 
-Menu Transaksi (Lakukan Transaksi)
+## Menu Transaksi (Lakukan Transaksi)
 
 <img width="323" height="136" alt="image" src="https://github.com/user-attachments/assets/b09d8b3d-678d-426c-8b99-d216fccd87fe" />
 
 Ketika pengguna memilih menu "Lakukan Transaksi" dari menu utama, program akan menampilkan sub-menu khusus transaksi seperti yang terlihat pada gambar. Di sini, pengguna diberikan pilihan untuk melakukan Setor Tunai (1), Tarik Tunai (2), atau Transfer Dana (3). Opsi nomor 4 disediakan agar pengguna dapat kembali ke menu utama jika tidak ingin melanjutkan transaksi.
 
+### Setor Tunai
 <img width="392" height="106" alt="image" src="https://github.com/user-attachments/assets/242fdc7b-e5f1-4c5d-aea8-a893fb199e7c" />
 
 Pada menu Setor Tunai, pengguna diminta memasukkan nomor rekening tujuan (contoh: REK2025001) diikuti dengan jumlah nominal yang akan disetor. Jika rekening ditemukan dan nominal valid, program akan menambahkan jumlah tersebut ke saldo nasabah dan mencatatnya di mutasi. Sebagai konfirmasi, sistem akan menampilkan pesan "BERHASIL" beserta saldo terbaru dari rekening tersebut.
 
 <img width="442" height="112" alt="image" src="https://github.com/user-attachments/assets/f5437961-0fbc-4c06-ac17-afc054edc357" />
 
-dsadasdasd
+Alur ini menunjukkan penanganan kesalahan pada menu Setor Tunai. Ketika pengguna memasukkan nomor rekening yang tidak ada dalam sistem (contoh: 20), program akan melakukan pencarian dan gagal menemukan data yang cocok. Akibatnya, sistem akan membatalkan transaksi dan menampilkan pesan "GAGAL: Rekening tidak ditemukan.".
 
+### Tarik Tunai
 <img width="680" height="150" alt="image" src="https://github.com/user-attachments/assets/6f879db1-a207-4212-be14-4be0992fc92b" />
 
-dsadasd
+Pada menu Tarik Tunai, alur ini menunjukkan validasi saldo minimum. Pengguna memasukkan nomor rekening yang valid (REK2025001) dan mencoba menarik nominal yang sangat besar (200000000). Program kemudian memeriksa apakah sisa saldo setelah penarikan akan lebih besar atau sama dengan batas saldo minimum yang telah ditentukan. Karena kondisi tersebut tidak terpenuhi, transaksi dibatalkan dan sistem menampilkan pesan "GAGAL: Saldo tidak mencukupi atau akan kurang dari saldo minimum.".
 
 <img width="434" height="138" alt="image" src="https://github.com/user-attachments/assets/8f2f7475-2bbb-4462-9bae-42409dbffade" />
 
-dsadasda
+Alur ini menunjukkan proses transaksi Tarik Tunai yang berhasil. Setelah memilih menu Tarik Tunai, pengguna memasukkan nomor rekening yang valid (REK2025001) dan jumlah penarikan (100000). Program memvalidasi bahwa saldo nasabah mencukupi untuk penarikan tersebut dan sisa saldonya tidak akan kurang dari batas minimum. Karena semua syarat terpenuhi, saldo nasabah dikurangi dan sistem menampilkan pesan "BERHASIL" beserta informasi sisa saldo yang terbaru.
 
 <img width="437" height="115" alt="image" src="https://github.com/user-attachments/assets/40b63c50-e20b-4594-b05e-e2b360f93114" />
 
-dsadasdasdas
+Alur ini menunjukkan penanganan kesalahan ketika pengguna mencoba melakukan penarikan tunai dari rekening yang tidak ada. Pengguna memasukkan nomor rekening yang tidak terdaftar di sistem (contoh: 1000). Program kemudian mencari data tersebut namun tidak berhasil menemukannya, sehingga transaksi dibatalkan dan sistem menampilkan pesan "GAGAL: Rekening tidak ditemukan.".
 
+### Transfer Dana 
 <img width="460" height="172" alt="image" src="https://github.com/user-attachments/assets/a50a426f-9274-4851-a733-c609c735ccd8" />
 
-dsadas
+Alur ini menunjukkan proses Transfer Dana yang berhasil antar dua rekening berbeda. Pengguna memasukkan nomor rekening pengirim (REK2025001), nomor rekening penerima (REK2025002), dan jumlah yang akan ditransfer (100000). Program memvalidasi bahwa semua rekening valid dan saldo pengirim mencukupi untuk jumlah transfer ditambah biaya administrasi. Setelah semua syarat terpenuhi, saldo pengirim dikurangi dan saldo penerima ditambahkan. Terakhir, sistem menampilkan pesan konfirmasi "BERHASIL: Transfer berhasil."
 
 <img width="569" height="151" alt="image" src="https://github.com/user-attachments/assets/96819513-c758-4af3-a533-44e9494fa7b5" />
 
-dsadasdasdas
+Alur ini menunjukkan validasi penting pada fitur Transfer Dana, yaitu mencegah pengguna mentransfer uang ke rekeningnya sendiri. Pengguna memasukkan nomor rekening yang sama untuk pengirim dan penerima (REK2025001). Program mendeteksi kesamaan ini, membatalkan transaksi sebelum meminta nominal, dan menampilkan pesan "GAGAL: Anda tidak bisa mentransfer ke rekening sendiri.".
 
 <img width="469" height="164" alt="image" src="https://github.com/user-attachments/assets/65111d0c-94a5-460d-80da-f3d170282faa" />
 
-dsadasdsad
+Alur ini menunjukkan validasi saldo pada fitur Transfer Dana. Pengguna telah memasukkan nomor rekening pengirim dan penerima yang valid, namun kemudian memasukkan jumlah transfer yang sangat besar (2000000000). Program memeriksa apakah saldo pengirim mencukupi untuk membayar jumlah transfer ditambah biaya administrasi. Karena tidak cukup, transaksi dibatalkan dan sistem menampilkan pesan "GAGAL: Saldo tidak mencukupi.".
 
+### Kembali Ke Menu Utama
 <img width="377" height="275" alt="image" src="https://github.com/user-attachments/assets/8e7f34c9-cd43-40f1-8b3c-d92e8bf70aa3" />
 
-dsadasd
+Alur pada gambar ini menunjukkan cara pengguna kembali ke menu utama dari sub-menu transaksi. Setelah berada di dalam "Menu Transaksi", pengguna memilih opsi nomor 4 ("Kembali ke Menu Utama"). Program kemudian mengeksekusi perintah return untuk keluar dari fungsi menuTransaksi(), dan alur program langsung kembali menampilkan menu utama, siap menerima perintah selanjutnya.
 
 
 <img width="461" height="231" alt="image" src="https://github.com/user-attachments/assets/215ddc3a-6479-48bf-a95b-7cb1ddc78741" />
 
-dsadasda
+Alur ini menunjukkan penanganan input yang tidak valid di dalam sub-menu transaksi. Pengguna memasukkan angka 5, yang tidak termasuk dalam pilihan yang tersedia (1-4). Program kemudian menjalankan blok default pada switch-case di dalam fungsi menuTransaksi(), yang menampilkan pesan "Pilihan tidak valid.". Setelah itu, pengguna diminta menekan Enter untuk melanjutkan sesi transaksi di sub-menu tersebut.
 
 
-
-Menu Mutasi (Lihat Mutasi Rekening)
+## Menu Mutasi (Lihat Mutasi Rekening)
 
 <img width="546" height="207" alt="image" src="https://github.com/user-attachments/assets/112a5892-556c-4164-8f34-dad6d2ccd885" />
 
@@ -116,7 +121,7 @@ Pada menu Lihat Mutasi Rekening, pengguna diminta memasukkan nomor rekening yang
 
 Alur ini menunjukkan penanganan kesalahan saat pengguna mencoba melihat mutasi rekening dengan nomor yang tidak terdaftar. Ketika pengguna memasukkan nomor rekening yang tidak ada di dalam sistem (contoh: 2409116008), program akan gagal menemukan data yang cocok dan akan menampilkan pesan "GAGAL: Rekening tidak ditemukan." untuk menginformasikan pengguna.
 
-Menu Search (Cari Nasabah)
+## Menu Search (Cari Nasabah)
 
 <img width="652" height="135" alt="image" src="https://github.com/user-attachments/assets/790020ff-a68e-49ea-8107-5c3c4d311f4d" />
 
@@ -127,7 +132,7 @@ Pada menu Cari Nasabah, pengguna dapat memasukkan kata kunci berupa Nama ataupun
 Alur ini menunjukkan hasil pencarian jika data tidak ditemukan. Ketika pengguna memasukkan kata kunci yang tidak cocok dengan nama atau nomor rekening manapun yang ada di dalam sistem (contoh: Angie), program akan menyelesaikan proses pencarian tanpa menemukan hasil. Sebagai umpan balik, sistem akan menampilkan pesan informatif "Nasabah tidak ditemukan".
 
 
-Menu Exit (Keluar)
+## Menu Exit (Keluar)
 
 <img width="758" height="48" alt="image" src="https://github.com/user-attachments/assets/9e41f980-1f0c-4890-9b91-25eacbdad716" />
 
